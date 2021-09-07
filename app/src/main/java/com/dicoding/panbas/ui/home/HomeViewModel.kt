@@ -1,4 +1,10 @@
 package com.dicoding.panbas.ui.home
 
-class HomeViewModel {
+import androidx.lifecycle.ViewModel
+import com.dicoding.panbas.data.repository.banjir.BanjirRepository
+
+class HomeViewModel (
+    private val banjirRepository:BanjirRepository
+): ViewModel(){
+    fun getAllBanjir() = banjirRepository.getAllBanjir()
 }

@@ -22,8 +22,6 @@ class MainActivity : AppCompatActivity() {
     }
     override fun onStart() {
         super.onStart()
-        val factory = ViewModelFactory.getInstance(this)
-        viewModel = ViewModelProvider(this, factory)[MainViewModel::class.java]
 
         val homeFragment = HomeFragment.getInstance()
         val reportFragment = ReportFragment.getInstance()

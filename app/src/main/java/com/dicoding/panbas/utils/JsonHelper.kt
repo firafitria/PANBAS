@@ -33,11 +33,10 @@ class JsonHelper (private val context: Context) {
                 val idbanjir = banjir.getString("idbanjir")
                 val location = banjir.getString("location")
                 val city = banjir.getString("city")
-                val date = banjir.getString("date")
                 val condition = banjir.getBoolean("condition")
                 val imagePath = banjir.getString("imagePath")
 
-                val courseResponse = BanjirResponse(idbanjir, location, city, date, condition, imagePath)
+                val courseResponse = BanjirResponse(idbanjir, location, city, condition, imagePath)
                 list.add(courseResponse)
             }
         } catch (e: JSONException) {

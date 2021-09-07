@@ -4,7 +4,6 @@ data class BanjirEntity (
     var idbanjir: String,
     var location: String,
     var city: String,
-    var date: String,
     var condition: Boolean = false,
     var imagePath: String
     )

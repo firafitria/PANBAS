@@ -15,14 +15,13 @@ class BanjirRepository private constructor(private val remoteDataSource: RemoteD
             }
     }
 
-    override fun getAllBanjir(): List<BanjirEntity> {
+    override fun getAllBanjir(): ArrayList<BanjirEntity> {
         val banjirResponse = remoteDataSource.getAllBanjir()
         val banjirList = ArrayList<BanjirEntity>()
         for (response in banjirResponse) {
             val banjir = BanjirEntity(response.idbanjir,
                 response.location,
                 response.city,
-                response.date,
                 false,
                 response.imagePath)
             banjirList.add(banjir)
