@@ -1,0 +1,44 @@
+{
+  "banjir": [
+    {
+      "idbanjir": "a1",
+      "location": "Juanda",
+      "city": "Samarinda",
+      "date": "02/08/2021",
+      "condition": true,
+      "imagePath": "https://statik.tempo.co/data/2021/07/18/id_1035820/1035820_720.jpg"
+    },
+     {
+      "idbanjir": "a3",
+      "location": "Antasari",
+      "city": "Samarinda",
+      "date": "02/08/2021",
+       "condition": true,
+      "imagePath": "https://statik.tempo.co/data/2021/07/18/id_1035820/1035820_720.jpg"
+    },
+     {
+      "idbanjir": "a2",
+      "location": "Suryanata",
+      "city": "Samarinda",
+      "date": "02/08/2021",
+       "condition": true,
+      "imagePath": "https://statik.tempo.co/data/2021/07/18/id_1035820/1035820_720.jpg"
+    },
+     {
+      "idbanjir": "a5",
+      "location": "Pattimura",
+      "city": "Samarinda",
+      "date": "02/08/2021",
+       "condition": true,
+      "imagePath": "https://statik.tempo.co/data/2021/07/18/id_1035820/1035820_720.jpg"
+    },
+  {
+      "idbanjir": "a4",
+      "location": "Cendana",
+      "city": "Samarinda",
+      "date": "02/08/2021",
+      "condition": true,
+      "imagePath": "https://statik.tempo.co/data/2021/07/18/id_1035820/1035820_720.jpg"
+    }
+  ]
+}
