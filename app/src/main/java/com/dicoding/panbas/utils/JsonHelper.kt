@@ -2,6 +2,7 @@ package com.dicoding.panbas.utils
 
 import android.content.Context
 import com.dicoding.panbas.data.datasource.response.BanjirResponse
+import com.dicoding.panbas.data.datasource.response.ReportResponse
 import org.json.JSONException
 import org.json.JSONObject
 import java.io.IOException
@@ -45,5 +46,31 @@ class JsonHelper (private val context: Context) {
 
         return list
     }
+
+    fun loadReport(): List<ReportResponse> {
+        val list = ArrayList<ReportResponse>()
+        try {
+            val responseObject = JSONObject(parsingFileToString("ReportResponses.json").toString())
+            val listArray = responseObject.getJSONArray("report")
+            for (i in 0 until listArray.length()) {
+                val report = listArray.getJSONObject(i)
+
+                val idreport = report.getString("idreport")
+                val name = report.getString("name")
+                val time = report.getString("time")
+                val location = report.getString("location")
+                val info = report.getString("info")
+                val imagePath = report.getString("imagePath")
+
+                val reportResponse = ReportResponse(idreport, name, time, location, info, imagePath)
+                list.add(reportResponse)
+            }
+        } catch (e: JSONException) {
+            e.printStackTrace()
+        }
+
+        return list
+    }
+
 
 }

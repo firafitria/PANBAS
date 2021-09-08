@@ -1,6 +1,7 @@
 package com.dicoding.panbas.data.datasource.remote
 
 import com.dicoding.panbas.data.datasource.response.BanjirResponse
+import com.dicoding.panbas.data.datasource.response.ReportResponse
 import com.dicoding.panbas.utils.JsonHelper
 
 class RemoteDataSource private constructor(private val jsonHelper: JsonHelper) {
@@ -15,4 +16,6 @@ class RemoteDataSource private constructor(private val jsonHelper: JsonHelper) {
     }
 
     fun getAllBanjir(): List<BanjirResponse> = jsonHelper.loadBanjir()
+
+    fun getAllReport(): List<ReportResponse> = jsonHelper.loadReport()
 }
