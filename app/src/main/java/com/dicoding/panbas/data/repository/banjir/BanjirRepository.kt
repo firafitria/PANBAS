@@ -28,4 +28,5 @@ class BanjirRepository private constructor(private val remoteDataSource: RemoteD
         }
         return banjirList
     }
+
 }

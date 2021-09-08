@@ -18,4 +18,5 @@ class RemoteDataSource private constructor(private val jsonHelper: JsonHelper) {
     fun getAllBanjir(): List<BanjirResponse> = jsonHelper.loadBanjir()
 
     fun getAllReport(): List<ReportResponse> = jsonHelper.loadReport()
+
 }

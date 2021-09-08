@@ -5,10 +5,9 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.dicoding.panbas.R
 import com.dicoding.panbas.data.datasource.local.entity.BanjirEntity
 import com.dicoding.panbas.databinding.ItemBanjirBinding
-import com.dicoding.panbas.ui.detail_report.DetailReportActivity
+import com.dicoding.panbas.ui.detail.DetailActivity
 
 class BanjirAdapter  : RecyclerView.Adapter<BanjirAdapter.BanjirViewHolder>() {
 
@@ -31,7 +30,7 @@ class BanjirAdapter  : RecyclerView.Adapter<BanjirAdapter.BanjirViewHolder>() {
 
 
                 itemView.setOnClickListener {
-                    val intent = Intent(itemView.context, DetailReportActivity::class.java)
+                    val intent = Intent(itemView.context, DetailActivity::class.java)
                     it.context.startActivity(intent)
                 }
             }

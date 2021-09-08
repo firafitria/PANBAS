@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.dicoding.panbas">
+
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -10,9 +11,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.PANBAS">
-        <activity android:name="com.dicoding.panbas.ui.detail_report.DetailReportActivity"></activity>
-        <activity android:name="com.dicoding.panbas.ui.detail.DetailActivity" />
-        <activity android:name="com.dicoding.panbas.ui.form.FormActivity" />
+        <activity android:name=".ui.camera.CameraActivity"></activity>
+        <activity android:name=".ui.detail_report.DetailReportActivity" />
+        <activity android:name=".ui.detail.DetailActivity" />
+        <activity android:name=".ui.form.FormActivity" />
         <activity
             android:name=".ui.splash.SplashActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
@@ -22,7 +24,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.dicoding.panbas.ui.main.MainActivity" />
+        <activity android:name=".ui.main.MainActivity" />
     </application>
 
 </manifest>
