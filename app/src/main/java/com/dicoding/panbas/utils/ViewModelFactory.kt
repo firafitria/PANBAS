@@ -5,6 +5,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.dicoding.panbas.data.repository.banjir.BanjirRepository
 import com.dicoding.panbas.data.repository.report.ReportRepository
+import com.dicoding.panbas.ui.detail.DetailViewModel
 import com.dicoding.panbas.ui.home.HomeViewModel
 import com.dicoding.panbas.ui.report.ReportViewModel
 
@@ -31,6 +32,9 @@ class ViewModelFactory private constructor (
             }
             modelClass.isAssignableFrom(ReportViewModel::class.java) -> {
                 ReportViewModel(reportRepository) as T
+            }
+            modelClass.isAssignableFrom(DetailViewModel::class.java) -> {
+                DetailViewModel(banjirRepository) as T
             }
             else -> throw Throwable("Unknown ViewModel class: ")
         }
