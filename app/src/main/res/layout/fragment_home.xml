@@ -37,8 +37,8 @@
             app:layout_constraintHorizontal_bias="0.913"
             app:layout_constraintStart_toEndOf="@+id/iv_logo_1"
             app:layout_constraintTop_toTopOf="parent"
-            android:background="@null"
-            tools:layout_editor_absoluteY="3dp" />
+            android:layout_marginEnd="3dp"
+            android:background="@null" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.cardview.widget.CardView
@@ -49,60 +49,87 @@
         app:layout_constraintTop_toBottomOf="@id/apalah"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:cardCornerRadius="50dp"
-        app:cardBackgroundColor="@color/blue_main">
+        app:cardCornerRadius="20dp"
+        app:cardBackgroundColor="@color/bg_red">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="168dp"
             android:layout_height="168dp">
 
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_flood_fill_2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/textView3"
+                app:layout_constraintHorizontal_bias="0.551"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.131" />
+
             <TextView
                 android:id="@+id/textView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/montserrat_semibold"
+                android:fontFamily="@font/poppins_medium"
                 android:text="Titik Rawan Banjir"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.515"
+                app:layout_constraintHorizontal_bias="0.619"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.74" />
+                app:layout_constraintVertical_bias="0.826" />
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:id="@+id/textView3"
+                android:layout_width="64dp"
+                android:layout_height="100dp"
                 android:fontFamily="@font/poppins_regular"
                 android:text="@string/angka"
-                android:textColor="@color/white"
-                android:textSize="72sp"
+                android:textColor="@color/black"
+                android:textSize="64sp"
                 app:layout_constraintBottom_toTopOf="@+id/textView"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.504"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.0" />
+                app:layout_constraintVertical_bias="1.0" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.cardview.widget.CardView>
 
     <TextView
+        android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/montserrat_bold"
+        android:fontFamily="@font/poppins_semibold"
         android:text="Pantauan Berita Terkini"
-        app:layout_constraintBottom_toTopOf="@+id/rv_banjir"
+        android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/desc_home"
         app:layout_constraintHorizontal_bias="0.13"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/card_terdampak"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toBottomOf="@+id/card_terdampak" />
+
+    <TextView
+        android:id="@+id/desc_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_regular"
+        android:text="Terakhir di update 2 jam yang lalu"
+        android:textColor="@color/font_gray"
+        app:layout_constraintBottom_toTopOf="@+id/rv_banjir"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.188"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView5" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_banjir"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="60dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
@@ -114,43 +141,57 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="12dp"
-        app:cardCornerRadius="50dp"
+        app:cardCornerRadius="20dp"
+        android:layout_marginEnd="3dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:cardBackgroundColor="@color/orange"
+        app:cardBackgroundColor="@color/bg_warning"
         app:layout_constraintStart_toEndOf="@+id/card_terdampak"
         app:layout_constraintTop_toBottomOf="@+id/apalah">
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="165dp"
-            android:layout_height="150dp"
+            android:layout_width="168dp"
+            android:layout_height="168dp"
             app:layout_constraintStart_toEndOf="@+id/card_2"
             app:layout_constraintTop_toBottomOf="@+id/card">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_home_7_fill_1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/textView4"
+                app:layout_constraintHorizontal_bias="0.533"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.097" />
 
             <TextView
                 android:id="@+id/tv_rawan"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/montserrat_semibold"
+                android:fontFamily="@font/poppins_medium"
                 android:text="Titik Rawan Banjir"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.515"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.732" />
+                app:layout_constraintVertical_bias="0.826" />
 
             <TextView
+                android:id="@+id/textView4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/montserrat_bold"
+                android:fontFamily="@font/poppins_regular"
                 android:text="@string/angka"
-                android:textColor="@color/white"
-                android:textSize="72sp"
+                android:textColor="@color/black"
+                android:textSize="64sp"
                 app:layout_constraintBottom_toTopOf="@+id/tv_rawan"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.504"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 

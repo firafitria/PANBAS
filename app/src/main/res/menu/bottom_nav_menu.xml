@@ -2,7 +2,7 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <item android:id="@+id/nav_home"
-        android:icon="@drawable/ic_home"
+        android:icon="@drawable/ic_home_7_fill_1__1_"
         android:title="@string/home" />
 
     <item android:id="@+id/nav_lapor"
@@ -10,9 +10,9 @@
         app:showAsAction="always"
         android:checkable="false"
         android:checked="false"
-        android:title="TODO" />
+        android:title="Lapor" />
 
     <item android:id="@+id/nav_profile"
         android:title="@string/notification"
-        android:icon="@drawable/ic_notification"/>
+        android:icon="@drawable/ic_file_text_fill_1"/>
 </menu>
