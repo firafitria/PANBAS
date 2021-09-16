@@ -43,7 +43,7 @@ class DetailActivity : AppCompatActivity() {
                 .into(binding.ivBanjir2)
             tvCondition.text = banjir.condition
 
-    }
+        }
 
     }
 
