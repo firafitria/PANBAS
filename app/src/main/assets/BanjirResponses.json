@@ -4,36 +4,36 @@
       "idbanjir": "a1",
       "location": "Juanda",
       "city": "Samarinda",
-      "condition": true,
+      "condition": "Banjir",
       "imagePath": "https://statik.tempo.co/data/2021/07/18/id_1035820/1035820_720.jpg"
     },
      {
       "idbanjir": "a3",
       "location": "Antasari",
       "city": "Samarinda",
-       "condition": true,
-      "imagePath": "https://statik.tempo.co/data/2021/07/18/id_1035820/1035820_720.jpg"
+       "condition": "Tidak Banjir",
+      "imagePath": "https://akcdn.detik.net.id/visual/2021/07/02/kota-samarinda-dilanda-banjir-hingga-50-cm_169.jpeg?w=650"
     },
      {
       "idbanjir": "a2",
       "location": "Suryanata",
       "city": "Samarinda",
-       "condition": true,
-      "imagePath": "https://statik.tempo.co/data/2021/07/18/id_1035820/1035820_720.jpg"
+       "condition": "Tidak Banjir",
+      "imagePath": "https://awsimages.detik.net.id/community/media/visual/2019/06/12/03138c76-4dba-4bde-b212-9027b36998c7_169.jpeg?w=700&q=90"
     },
      {
       "idbanjir": "a5",
       "location": "Pattimura",
       "city": "Samarinda",
-       "condition": true,
-      "imagePath": "https://statik.tempo.co/data/2021/07/18/id_1035820/1035820_720.jpg"
+       "condition": "Banjir",
+      "imagePath": "https://cdn-2.tstatic.net/kaltim/foto/bank/images/simpang-empat-banjir_20161128_110605.jpg"
     },
   {
       "idbanjir": "a4",
       "location": "Cendana",
       "city": "Samarinda",
-      "condition": true,
-      "imagePath": "https://statik.tempo.co/data/2021/07/18/id_1035820/1035820_720.jpg"
+      "condition": "Banjir",
+      "imagePath": "https://cdn-2.tstatic.net/tribunnews/foto/bank/images/banjir-di-samarinda_20161128_104845.jpg"
     }
   ]
 }
