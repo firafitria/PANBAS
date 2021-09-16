@@ -18,32 +18,33 @@
         app:layout_constraintBottom_toTopOf="@id/card_4"/>
 
     <TextView
-        android:id="@+id/nama_user"
+        android:id="@+id/tv_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="64dp"
-        android:text="name user"
         android:fontFamily="@font/poppins_semibold"
+        android:text="name user"
         android:textColor="@color/black"
         app:layout_constraintBottom_toTopOf="@+id/card_4"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.087"
+        app:layout_constraintHorizontal_bias="0.086"
         app:layout_constraintStart_toEndOf="@id/image_user"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.793" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
-        android:id="@+id/waktu"
+        android:id="@+id/tv_waktu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="20 menit yang lalu."
+        android:layout_marginBottom="40dp"
         android:fontFamily="@font/poppins_regular"
+        android:text="20 menit yang lalu."
         app:layout_constraintBottom_toTopOf="@+id/card_4"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.104"
+        app:layout_constraintHorizontal_bias="0.113"
         app:layout_constraintStart_toEndOf="@id/image_user"
-        app:layout_constraintTop_toBottomOf="@id/nama_user"
+        app:layout_constraintTop_toBottomOf="@id/tv_name"
         app:layout_constraintVertical_bias="0.0" />
 
     <androidx.cardview.widget.CardView
@@ -57,6 +58,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageView
+            android:id="@+id/iv_report"
             android:layout_width="298dp"
             android:layout_height="164dp"
             android:layout_gravity="center"
@@ -105,17 +107,18 @@
         app:layout_constraintTop_toBottomOf="@+id/tv_lokasi" />
 
     <TextView
-        android:layout_width="348dp"
+        android:id="@+id/tv_ket"
+        android:layout_width="330dp"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_regular"
         android:text="Menjelang sore hari kawasan Muang Dalam, Lempake masih terendam banjir. Bahkan ketinggian air hampir sepinggang orang  dewasa"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:fontFamily="@font/poppins_regular"
-        android:textColor="@color/black"
-        app:layout_constraintHorizontal_bias="0.492"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.085"
+        app:layout_constraintStart_toStartOf="@+id/detail"
         app:layout_constraintTop_toBottomOf="@+id/detail"
-        app:layout_constraintVertical_bias="0.04" />
+        app:layout_constraintVertical_bias="0.051" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
