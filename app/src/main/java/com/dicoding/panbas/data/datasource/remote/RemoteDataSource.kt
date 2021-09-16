@@ -21,4 +21,7 @@ class RemoteDataSource private constructor(private val jsonHelper: JsonHelper) {
 
     fun getAllReport(): List<ReportResponse> = jsonHelper.loadReport()
 
+    fun getItemReport(idreport: String): ReportResponse = jsonHelper.loadItemReport(idreport)
+
+
 }

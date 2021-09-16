@@ -104,5 +104,36 @@ class JsonHelper (private val context: Context) {
         return list
     }
 
+    fun loadItemReport(idreport :String): ReportResponse{
+        val fileName = String.format("ReportResponses.json", idreport)
+        var reportResponse: ReportResponse? = null
+        try {
+            val result = parsingFileToString(fileName)
+            if (result != null) {
+                Log.e("helper", "loadItemReport: $result")
+                val responseObject = JSONObject(result)
+                val report = responseObject.getJSONArray("report")
+                for (i in 0 until report.length()) {
+                    Log.e("HELPER", "loadItemReport: ${report.getJSONObject(i)}", )
+                    val id = report.getJSONObject(i).getString("idreport")
+                    if (idreport.equals(id, ignoreCase = true)) {
+                        val name = report.getJSONObject(i).getString("name")
+                        val time = report.getJSONObject(i).getString("time")
+                        val location = report.getJSONObject(i).getString("location")
+                        val info = report.getJSONObject(i).getString("info")
+                        val imagePath = report.getJSONObject(i).getString("imagePath")
+                        reportResponse = ReportResponse(idreport,name,time,location,info,imagePath)
+                    }
+                }
+            }
+        } catch (e: JSONException) {
+            e.printStackTrace()
+            Log.e("helper", "loadItemReport: error ${e.message}", e)
+        }
+
+        return reportResponse as ReportResponse
+
+    }
+
 
 }
