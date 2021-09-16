@@ -12,6 +12,7 @@ import androidx.lifecycle.ViewModelProvider
 import com.dicoding.panbas.R
 import com.dicoding.panbas.databinding.ActivityMainBinding
 import com.dicoding.panbas.ui.camera.CameraActivity
+import com.dicoding.panbas.ui.form.FormActivity
 import com.dicoding.panbas.ui.home.HomeFragment
 import com.dicoding.panbas.ui.report.ReportFragment
 import com.dicoding.panbas.utils.ViewModelFactory
@@ -37,7 +38,7 @@ class MainActivity : AppCompatActivity() {
         val reportFragment = ReportFragment.getInstance()
         moveFragment(homeFragment)
         binding.btnReport.setOnClickListener {
-            val i = Intent(this@MainActivity, CameraActivity::class.java)
+            val i = Intent(this@MainActivity, FormActivity::class.java)
             startActivity(i)
             finish()
 
