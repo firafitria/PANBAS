@@ -22,11 +22,23 @@ class BanjirRepository private constructor(private val remoteDataSource: RemoteD
             val banjir = BanjirEntity(response.idbanjir,
                 response.location,
                 response.city,
-                false,
+                response.condition,
                 response.imagePath)
             banjirList.add(banjir)
         }
         return banjirList
+    }
+
+    override fun getItemBanjir(idbanjir: String): BanjirEntity {
+        val banjirResponse = remoteDataSource.getItemBanjir(idbanjir)
+
+        return BanjirEntity(
+            banjirResponse.idbanjir,
+            banjirResponse.location,
+            banjirResponse.city,
+            banjirResponse.condition,
+            banjirResponse.imagePath
+        )
     }
 
 }

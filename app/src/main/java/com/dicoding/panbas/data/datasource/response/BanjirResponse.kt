@@ -8,6 +8,6 @@ data class BanjirResponse(
         var idbanjir: String,
         var location: String,
         var city: String,
-        var condition: Boolean,
+        var condition: String,
         var imagePath: String
         ): Parcelable
