@@ -5,10 +5,11 @@ import com.dicoding.panbas.data.datasource.local.entity.BanjirEntity
 import com.dicoding.panbas.data.repository.banjir.BanjirRepository
 
 class DetailViewModel (private val banjirRepository: BanjirRepository) : ViewModel() {
-    private lateinit var banjirId: String
+    private lateinit var idbanjir: String
 
-    fun setBanjir(banjirId: String) {
-        this.banjirId = banjirId
+    fun setBanjir(idbanjir: String) {
+        this.idbanjir = idbanjir
     }
+    fun getItemBanjir(): BanjirEntity = banjirRepository.getItemBanjir(idbanjir)
 
 }
