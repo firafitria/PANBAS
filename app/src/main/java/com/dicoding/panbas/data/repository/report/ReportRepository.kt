@@ -1,5 +1,6 @@
 package com.dicoding.panbas.data.repository.report
 
+import com.dicoding.panbas.data.datasource.local.entity.BanjirEntity
 import com.dicoding.panbas.data.datasource.local.entity.ReportEntity
 import com.dicoding.panbas.data.datasource.remote.RemoteDataSource
 import com.dicoding.panbas.data.datasource.remote.ReportDataSource
@@ -29,4 +30,18 @@ class ReportRepository private constructor(private val remoteDataSource: RemoteD
         }
         return reportList
     }
+
+    override fun getItemReport(idreport: String): ReportEntity {
+        val reportResponse = remoteDataSource.getItemReport(idreport)
+
+        return ReportEntity(
+            reportResponse.idreport,
+            reportResponse.name,
+            reportResponse.time,
+            reportResponse.location,
+            reportResponse.info,
+            reportResponse.imagePath
+        )
+    }
+
 }

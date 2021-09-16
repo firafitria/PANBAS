@@ -8,6 +8,7 @@ import com.bumptech.glide.Glide
 import com.dicoding.panbas.data.datasource.local.entity.ReportEntity
 import com.dicoding.panbas.databinding.ItemLaporanBinding
 import com.dicoding.panbas.ui.detail_report.DetailReportActivity
+import com.dicoding.panbas.ui.detail_report.DetailReportActivity.Companion.REPORT
 
 class ReportAdapter : RecyclerView.Adapter<ReportAdapter.ReportViewHolder>() {
 
@@ -31,7 +32,9 @@ class ReportAdapter : RecyclerView.Adapter<ReportAdapter.ReportViewHolder>() {
 
 
                 itemView.setOnClickListener {
-                    val intent = Intent(itemView.context, DetailReportActivity::class.java)
+                    val intent = Intent(itemView.context, DetailReportActivity::class.java).putExtra(
+                        REPORT, report
+                    )
                     it.context.startActivity(intent)
                 }
             }
