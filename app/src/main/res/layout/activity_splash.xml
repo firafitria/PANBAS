@@ -4,15 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg_color"
+    android:background="@color/white"
     tools:context=".ui.splash.SplashActivity">
 
     <ImageView
         android:id="@+id/iv_logo"
-        android:layout_width="225dp"
-        android:layout_height="109dp"
+        android:layout_width="194dp"
+        android:layout_height="150dp"
         android:contentDescription="TODO"
-        android:src="@drawable/ic_logo_fix"
+        android:src="@drawable/ic_logo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"

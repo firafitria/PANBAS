@@ -6,13 +6,116 @@
     android:layout_height="match_parent"
     tools:context=".ui.detail_report.DetailReportActivity">
 
+    <ImageView
+        android:id="@+id/image_user"
+        android:layout_width="67dp"
+        android:layout_height="60dp"
+        android:src="@drawable/ic_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.073"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/card_4"/>
+
     <TextView
+        android:id="@+id/nama_user"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="HELLO WORLD!"
+        android:layout_marginBottom="64dp"
+        android:text="name user"
+        android:fontFamily="@font/poppins_semibold"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/card_4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.087"
+        app:layout_constraintStart_toEndOf="@id/image_user"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.793" />
+
+    <TextView
+        android:id="@+id/waktu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="20 menit yang lalu."
+        android:fontFamily="@font/poppins_regular"
+        app:layout_constraintBottom_toTopOf="@+id/card_4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.104"
+        app:layout_constraintStart_toEndOf="@id/image_user"
+        app:layout_constraintTop_toBottomOf="@id/nama_user"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_4"
+        android:layout_width="348dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="112dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="298dp"
+            android:layout_height="164dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_logo" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/lokasi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:fontFamily="@font/poppins_semibold"
+        android:textColor="@color/black"
+        android:text="Lokasi : "
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.086"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_4" />
+
+    <TextView
+        android:id="@+id/tv_lokasi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Jalan Juanda"
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.094"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lokasi" />
+
+    <TextView
+        android:id="@+id/detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:textSize="16sp"
+        android:fontFamily="@font/poppins_semibold"
+        android:textColor="@color/black"
+        android:text="Detail Informasi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.099"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_lokasi" />
+
+    <TextView
+        android:layout_width="348dp"
+        android:layout_height="wrap_content"
+        android:text="Menjelang sore hari kawasan Muang Dalam, Lempake masih terendam banjir. Bahkan ketinggian air hampir sepinggang orang  dewasa"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        android:fontFamily="@font/poppins_regular"
+        android:textColor="@color/black"
+        app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/detail"
+        app:layout_constraintVertical_bias="0.04" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
