@@ -1,10 +1,10 @@
 package com.dicoding.panbas.data.repository.banjir
 
 import com.dicoding.panbas.data.datasource.local.entity.BanjirEntity
-import com.dicoding.panbas.data.datasource.remote.BanjirDataSource
 import com.dicoding.panbas.data.datasource.remote.RemoteDataSource
 
-class BanjirRepository private constructor(private val remoteDataSource: RemoteDataSource) : BanjirDataSource {
+class BanjirRepository private constructor(private val remoteDataSource: RemoteDataSource) :
+    BanjirDataSource {
 
     companion object {
         @Volatile
