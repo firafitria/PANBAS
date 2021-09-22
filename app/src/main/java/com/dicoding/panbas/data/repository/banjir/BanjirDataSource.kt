@@ -1,4 +1,4 @@
-package com.dicoding.panbas.data.datasource.remote
+package com.dicoding.panbas.data.repository.banjir
 
 import com.dicoding.panbas.data.datasource.local.entity.BanjirEntity
 
