@@ -1,15 +1,15 @@
 package com.dicoding.panbas.ui.detail_report
 
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.dicoding.panbas.data.datasource.local.entity.BanjirEntity
 import com.dicoding.panbas.data.datasource.local.entity.ReportEntity
 import com.dicoding.panbas.data.repository.report.ReportRepository
 
 class DetailReportViewModel(private val reportRepository: ReportRepository) : ViewModel() {
-    private lateinit var idreport: String
+    private val mutableReport = MutableLiveData<ReportEntity>()
 
-    fun setReport(idreport: String) {
-        this.idreport = idreport
-    }
-    fun getItemReport(): ReportEntity = reportRepository.getItemReport(idreport)
+    fun getReport(): LiveData<ReportEntity> = mutableReport
+    fun setReport(reportEntity: ReportEntity?) {mutableReport.postValue(reportEntity)}
 }
