@@ -25,15 +25,15 @@ class ReportAdapter : RecyclerView.Adapter<ReportAdapter.ReportViewHolder>() {
         RecyclerView.ViewHolder(binding.root) {
         fun bind(report: ReportEntity) {
             with(binding) {
-                tvCity3.text = report.location
-                tvDesc.text = report.info
-                Glide.with(binding.root).load(report.imagePath)
+                tvCity3.text = report.lokasi
+                tvDesc.text = report.keterangan
+                Glide.with(binding.root).load(report.linkFoto)
                     .into(binding.ivBanjir1)
 
 
                 itemView.setOnClickListener {
-                    val intent = Intent(itemView.context, DetailReportActivity::class.java).putExtra(
-                        REPORT, report
+                    val intent = Intent(itemView.context, DetailReportActivity::class.java)
+                    intent.putExtra(DetailReportActivity.REPORT, report
                     )
                     it.context.startActivity(intent)
                 }
