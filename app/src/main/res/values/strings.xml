@@ -6,7 +6,8 @@
     <string name="welcome">Pantau banjir sekitar dengan mudah disini</string>
     <string name="start">Mulai</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="angka"> 18 </string>
+    <string name="angka"> 30 </string>
+    <string name="angka_2">22</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

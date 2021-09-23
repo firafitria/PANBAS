@@ -1,0 +1,104 @@
+{
+  "report": [
+    {
+      "idlocation":"a1",
+      "location": "jalan Abdul Wahab Syaharanie"
+    },
+    {
+      "idlocation":"a2",
+      "location": "jalan Pembangunan",
+    },  
+    {
+      "idlocation":"a3",
+      "location": "jalan S. Parman",
+    },
+    {
+      "idlocation":"a4",
+      "location": "jalan Tekukur",
+    },
+    {
+      "idlocation":"a5",
+      "location": "jalan Hasan Basri",
+    },
+    {
+      "idlocation":"a6",
+      "location": "jalan Kehewanan",
+    },
+    {
+      "idlocation":"a7",
+      "location": "jalan Jelawat",
+    },
+    {
+      "idlocation":"a8",
+      "location": "jalan Kartini",
+    },
+    {
+      "idlocation":"a9",
+      "location": "jalan Danau Toba",
+    },
+    {
+      "idlocation":"a10",
+      "location": "jalan Abul Hasan",
+    },
+    {
+      "idlocation":"a11",
+      "location": "jalan Awang long",
+    },
+    {
+      "idlocation":"a12",
+      "location": "jalan Merbabu",
+    },
+    {
+      "idlocation":"a13",
+      "location": "jalan Pahlawan",
+    },
+    {
+      "idlocation":"a14",
+      "location": "jalan Bhayangkara",
+    },
+    {
+      "idlocation":"a15",
+      "location": "jalan KS Tubun",
+    },
+    {
+      "idlocation":"a16",
+      "location": "jalan Bung Tomo",
+    },
+    {
+      "idlocation":"a17",
+      "location": "jalan Keledang",
+    },
+    {
+      "idlocation":"a18",
+      "location": "jalan Lumba-Lumba",
+    },
+    {
+      "idlocation":"a19",
+      "location": "jalan Kapten Soedjono",
+    },
+    {
+      "idlocation":"a20",
+      "location": "jalan Gani Mulya Raya"
+    },
+    {
+      "idlocation":"a21",
+      "location": "jalan Imam Bonjol",
+    },
+    {
+      "idlocation":"a22",
+      "location": "jalan Ahmad Dahlan",
+    },
+    {
+      "idlocation":"a23",
+      "location": "jalan Lambung Mangkurat",
+    },
+    {
+      "idlocation":"a24",
+      "location": "jalan Damanhuri",
+    },
+    {
+      "idlocation":"a25",
+      "location": "jalan Biawan",
+    },
+  ]
+}

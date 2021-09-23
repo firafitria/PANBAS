@@ -3,6 +3,8 @@
     package="com.dicoding.panbas">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -11,10 +13,23 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.PANBAS">
-        <activity android:name=".ui.camera.CameraActivity"></activity>
-        <activity android:name=".ui.detail_report.DetailReportActivity" />
-        <activity android:name=".ui.detail.DetailActivity" />
-        <activity android:name=".ui.form.FormActivity" />
+        <activity android:name=".ui.terdampak.TerdampakActivity"
+            android:parentActivityName=".ui.main.MainActivity"></activity>
+        <activity android:name=".ui.rawan.RawanActivity"
+            android:parentActivityName=".ui.main.MainActivity"/>
+        <activity
+            android:name=".ui.profile.ProfileActivity"
+            android:parentActivityName=".ui.main.MainActivity" />
+        <activity android:name=".ui.camera.CameraActivity" />
+        <activity
+            android:name=".ui.detail_report.DetailReportActivity"
+            android:parentActivityName=".ui.main.MainActivity" />
+        <activity
+            android:name=".ui.detail.DetailActivity"
+            android:parentActivityName=".ui.main.MainActivity" />
+        <activity
+            android:name=".ui.form.FormActivity"
+            android:parentActivityName=".ui.main.MainActivity" />
         <activity
             android:name=".ui.splash.SplashActivity"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
@@ -25,6 +40,16 @@
             </intent-filter>
         </activity>
         <activity android:name=".ui.main.MainActivity" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/providers_path" />
+        </provider>
     </application>
 
 </manifest>

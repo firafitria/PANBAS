@@ -11,9 +11,8 @@ interface ReportService {
     @Multipart
     @POST("laporan/store")
     fun createReport(
-        @Part filePart: MultipartBody.Part,
+        @Part image: MultipartBody.Part,
         @Query ("lokasi") lokasi:String,
         @Query("keterangan") keterangan: String,
-        @Query ("image") image: String
-    ): Call <ReportResponse>
+    ): Call <CreateResponse>
 }

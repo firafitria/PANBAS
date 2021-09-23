@@ -4,8 +4,10 @@ import androidx.lifecycle.LiveData
 import com.dicoding.panbas.data.NetworkBoundResource
 import com.dicoding.panbas.data.datasource.local.ReportLocalDataSource
 import com.dicoding.panbas.data.datasource.local.entity.ReportEntity
+import com.dicoding.panbas.data.datasource.remote.API.CreateResponse
 import com.dicoding.panbas.data.datasource.remote.API.LaporanItem
 import com.dicoding.panbas.data.datasource.remote.request.ReportRemoteDataSource
+import com.dicoding.panbas.data.datasource.remote.request.ReportRequest
 import com.dicoding.panbas.data.datasource.response.ApiResponse
 import com.dicoding.panbas.data.vo.Resource
 import com.dicoding.panbas.utils.AppExecutor
@@ -58,5 +60,8 @@ class ReportRepository private constructor(
         }.asLiveData()
 
     }
+
+    override fun createReport(request: ReportRequest): LiveData<ApiResponse<CreateResponse>> =
+        remote.createReport(request)
 
 }
