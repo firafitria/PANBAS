@@ -1,5 +1,6 @@
 package com.dicoding.panbas.ui.home
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import androidx.fragment.app.Fragment
@@ -12,6 +13,9 @@ import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.dicoding.panbas.R
 import com.dicoding.panbas.databinding.FragmentHomeBinding
+import com.dicoding.panbas.ui.profile.ProfileActivity
+import com.dicoding.panbas.ui.rawan.RawanActivity
+import com.dicoding.panbas.ui.terdampak.TerdampakActivity
 import com.dicoding.panbas.utils.ViewModelFactory
 
 
@@ -44,6 +48,26 @@ class HomeFragment : Fragment() {
                 setHasFixedSize(true)
                 adapter = banjirAdapter
                 }
+        }
+
+        binding.btnProfile.setOnClickListener {
+            requireActivity().run {
+                startActivity(Intent(this, ProfileActivity::class.java))
+                finish()
+            }
+        }
+
+        binding.cardRawan.setOnClickListener {
+            requireActivity().run{
+                startActivity(Intent(this, RawanActivity::class.java))
+                finish()
+            }
+        }
+        binding.cardTerdampak.setOnClickListener {
+            requireActivity().run{
+                startActivity(Intent(this, TerdampakActivity::class.java))
+                finish()
+            }
         }
     }
 
