@@ -26,7 +26,7 @@ class CameraActivity : AppCompatActivity() {
     lateinit var bitmap: Bitmap
     lateinit var camerabtn : Button
 
-    public fun checkandGetpermissions(){
+  fun checkandGetpermissions(){
         if(checkSelfPermission(android.Manifest.permission.CAMERA) == PackageManager.PERMISSION_DENIED){
             requestPermissions(arrayOf(android.Manifest.permission.CAMERA), 100)
         }

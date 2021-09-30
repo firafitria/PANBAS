@@ -14,6 +14,7 @@ import com.dicoding.panbas.R
 import com.dicoding.panbas.databinding.ActivityMainBinding
 import com.dicoding.panbas.ui.form.FormActivity
 import com.dicoding.panbas.ui.home.HomeFragment
+import com.dicoding.panbas.ui.lapor.LaporActivity
 import com.dicoding.panbas.ui.report.ReportFragment
 import java.io.File
 import java.text.SimpleDateFormat
@@ -46,6 +47,9 @@ class MainActivity : AppCompatActivity() {
         moveFragment(homeFragment)
         binding.btnReport.setOnClickListener {
             lapor()
+//            val pindah= Intent(this, LaporActivity::class.java)
+//
+//            startActivity(pindah)
 
         }
         binding.bottomNav.setOnItemSelectedListener {
@@ -69,6 +73,7 @@ class MainActivity : AppCompatActivity() {
         val fileName = "$date-$randNumber.jpg"
 
         output = File(File(filesDir, "photos"), fileName)
+
         if (output.exists()) output.delete() else output.parentFile.mkdirs()
 
         val intent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)

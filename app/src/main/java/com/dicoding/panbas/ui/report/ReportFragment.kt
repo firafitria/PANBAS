@@ -72,6 +72,7 @@ class ReportFragment : Fragment() {
                 Status.SUCCESS -> {
                     if (it.data != null) {
                         Log.d("ReportFragment", "Jumlah Data: ${it.data.size}")
+                        Log.d("ReportFragment", "Data: ${it.data}")
                         adapter.setReport(it.data)
                     }
                 }

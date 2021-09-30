@@ -9,7 +9,7 @@ import com.dicoding.panbas.data.datasource.local.entity.ReportEntity
 
 @Dao
 interface ReportDao {
-    @Query("SELECT * FROM reportEntity")
+    @Query("SELECT * FROM reportEntity DESCENDING")
     fun getAllReport(): LiveData<List<ReportEntity>>
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)

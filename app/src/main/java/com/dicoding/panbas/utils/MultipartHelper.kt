@@ -8,7 +8,7 @@ import java.io.File
 object MultipartHelper {
     fun getPart(file: File): MultipartBody.Part {
         return MultipartBody.Part.createFormData(
-            "foto",
+            "image",
             file.name,
             file.asRequestBody("image/*".toMediaTypeOrNull())
         )
